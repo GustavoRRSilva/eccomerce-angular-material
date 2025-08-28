@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 200px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.products-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
