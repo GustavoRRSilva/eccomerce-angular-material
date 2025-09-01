@@ -1,7 +1,7 @@
 <div class="container">
   <h2>Our latest collection</h2>
   <div class="products-list">
-    <mat-card class="example-card" appearance="outlined" *ngFor="let product of products">
+    <mat-card class="example-card" (click)="addToCart(product)" appearance="outlined" *ngFor="let product of products">
     <img mat-card-image src="assets/images/{{product.image_url}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <mat-card-title>{{product.name}}</mat-card-title>

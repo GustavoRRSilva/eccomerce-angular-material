@@ -1,0 +1,14 @@
+.container-products{
+  padding: 20px;
+}
+
+.card-price{
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button{
+  width: 250px;
+  align-self: flex-end;
+}

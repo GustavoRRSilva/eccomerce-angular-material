@@ -4,6 +4,8 @@ import { CartViewComponent } from './cart-view/cart-view.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 
 
@@ -15,7 +17,8 @@ import { MatListModule } from '@angular/material/list';
     CommonModule,
     MatCardModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
   ]
 })
 export class CartModule { }
