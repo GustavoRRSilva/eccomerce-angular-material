@@ -3,6 +3,16 @@
     <mat-form-field>
       <input matInput (keyup)="applyFilter($event)" placeholder="Search">
     </mat-form-field>
+     <mat-form-field>
+      <mat-select (selectionChange)="sortProducts($event.value)" placeholder="Sort">
+        <mat-option value="priceLowHigh">
+          Price: Low to High
+        </mat-option>
+        <mat-option value="priceHighLow">
+          Price: High to Low
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   <div class="products-list">
     <mat-card class="example-card" (click)="addToCart(product)" appearance="outlined" *ngFor="let product of filteredProducts">
     <img mat-card-image src="assets/images/{{product.image_url}}" alt="Photo of a Shiba Inu">
